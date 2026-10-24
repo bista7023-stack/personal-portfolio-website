@@ -1,9 +1,11 @@
-# Digital Mahendra
+# Digital Hub
+
+<p align="center"><img src="brand-logo.svg" alt="Digital Hub logo" width="280"></p>
 
 > **Make growth feel obvious.**  
 > AI-powered marketing systems for small businesses—clear strategy, connected tools, and practical next steps.
 
-Digital Mahendra helps small businesses bring marketing channels, offers, and AI tools together around one focused growth goal. The website presents a clean, dark visual identity with cyan accents, subtle motion, and a straightforward path to get in touch.
+Digital Hub helps small businesses bring marketing channels, offers, and AI tools together around one focused growth goal. The website presents a clean, dark visual identity with cyan accents, subtle motion, and a straightforward path to get in touch.
 
 ## What you’ll find here
 
@@ -37,4 +39,4 @@ Questions or project inquiries: [bista7023@gmail.com](mailto:bista7023@gmail.com
 
 ---
 
-**Digital Mahendra** · Clearer marketing systems for small businesses.
+**Digital Hub** · Clearer marketing systems for small businesses.
