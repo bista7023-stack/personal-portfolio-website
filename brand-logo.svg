@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="351" viewBox="0 0 1024 351" role="img" aria-labelledby="title desc">
-<title id="title">Digital Hub by Mahendra</title><desc id="desc">Blue monogram with the black and blue Digital Hub wordmark and Mahendra's name.</desc>
-<rect width="1024" height="351" rx="34" fill="#f7faff"/>
-<rect x="38" y="43" width="265" height="265" rx="78" fill="#1476f2"/>
-<path d="M91 248V112c0-20 26-29 40-12l36 45 38-45c14-17 40-8 40 12v136" fill="none" stroke="#ffffff" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="350" y="151" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-5" fill="#10141b">digital</text>
-<text x="350" y="259" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" letter-spacing="-4" fill="#1476f2">hub</text>
-<text x="614" y="255" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="600" letter-spacing="0" fill="#10141b">by Mahendra</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Digital Hub by Mahendra</title>
+<desc id="desc">A clear, large blue monogram and Digital Hub wordmark with Mahendra's name. Transparent background.</desc>
+<rect x="35" y="44" width="292" height="292" rx="86" fill="#1476f2"/>
+<path d="M91 265V114c0-22 29-31 44-13l38 49 42-49c15-18 44-9 44 13v151" fill="none" stroke="#fff" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="378" y="169" font-family="Arial, Helvetica, sans-serif" font-size="124" font-weight="700" letter-spacing="-5" fill="#10141b">digital</text>
+<text x="378" y="294" font-family="Arial, Helvetica, sans-serif" font-size="124" font-weight="700" letter-spacing="-4" fill="#1476f2">hub</text>
+<text x="670" y="290" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="600" fill="#10141b">by Mahendra</text>
 </svg>
