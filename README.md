@@ -11,9 +11,9 @@ A responsive, single-page portfolio website built with plain HTML, CSS, and Java
 
 - A mobile-friendly navigation and animated growth dashboard
 - Marketing services and a four-step process overview
-- A free AI tools guide signup form
+- A guide request form
 - Contact and custom growth system inquiry sections
-- FAQs, client-story cards, and clear calls to action
+- FAQs, practical growth guidance cards, and clear calls to action
 - Scroll reveals, animated counters, and responsive layouts
 
 ## Services
@@ -29,7 +29,7 @@ A responsive, single-page portfolio website built with plain HTML, CSS, and Java
 
 ## Getting started
 
-Open `index.html` in a browser to preview the site. For contact and guide form submissions, serve the page over HTTP or HTTPS. The forms use FormSubmit and require the recipient’s initial activation email to be approved before submissions are delivered.
+Open `index.html` in a browser to preview the site. For contact and guide request submissions, host the page over HTTP or HTTPS. Both forms post to FormSubmit, which must be activated for the website’s address before it delivers entries. The guide form sends a request to the site owner; the guide is shared manually by email.
 
 ## Contact
 
