@@ -1,6 +1,6 @@
 # Digital Hub by Mahendra
 
-<p align="center"><img src="brand-logo.svg" alt="Digital Hub logo" width="280"></p>
+<p align="center"><img src="brand-logo.svg" alt="Digital Hub logo" width="440"></p>
 
 > **Make growth feel obvious.**  
 > AI-powered marketing systems for small businesses—clear strategy, connected tools, and practical next steps.
