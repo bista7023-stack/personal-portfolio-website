@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">Digital Hub by Mahendra</title>
+<desc id="desc">A clear, large blue monogram and Digital Hub wordmark with Mahendra's name. Transparent background.</desc>
+<rect x="35" y="44" width="292" height="292" rx="86" fill="#1476f2"/>
+<path d="M91 265V114c0-22 29-31 44-13l38 49 42-49c15-18 44-9 44 13v151" fill="none" stroke="#fff" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="378" y="169" font-family="Arial, Helvetica, sans-serif" font-size="124" font-weight="700" letter-spacing="-5" fill="#f4f7ff">digital</text>
+<text x="378" y="294" font-family="Arial, Helvetica, sans-serif" font-size="124" font-weight="700" letter-spacing="-4" fill="#1476f2">hub</text>
+<text x="670" y="290" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="600" fill="#f4f7ff">by Mahendra</text>
+</svg>
