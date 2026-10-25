@@ -101,6 +101,55 @@
     @media(max-width:900px){.motion-float-one{left:-1%}.motion-float-two{right:-1%}.motion-float-three{right:0}}
     @media(max-width:680px){.motion-float{max-width:150px;padding:8px 9px;gap:7px;font-size:9px}.motion-float b{font-size:10px}.motion-icon{flex-basis:31px;width:31px;height:31px;border-radius:10px}.motion-icon svg{width:22px;height:22px}.motion-float-one{left:0;top:0}.motion-float-two{right:0;top:0}.motion-float-three{display:none}}
     @media(prefers-reduced-motion:reduce){.motion-float{animation:none}.motion-icon path{stroke-dashoffset:0;animation:none}}
+
+    /* Featured product catalog */
+    .product-catalog{padding-top:84px;padding-bottom:104px}
+    .product-heading{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:30px}
+    .product-heading h2{font:600 clamp(36px,5vw,56px)/1.02 var(--display);letter-spacing:-.055em;margin:12px 0 0}
+    .product-heading>p{max-width:360px;color:var(--muted);line-height:1.7;margin:0 0 4px}
+    .product-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,66px);align-items:center;padding:clamp(20px,3.5vw,42px);border-radius:30px;background:linear-gradient(120deg,#f3f6fb,#e7edf4);color:#131922;overflow:hidden;position:relative}
+    .product-stage{min-height:465px;position:relative;display:grid;place-items:center;border-radius:23px;background:radial-gradient(ellipse at 50% 54%,rgba(69,139,246,.29),transparent 40%),linear-gradient(145deg,#e8f0fa,#d9e4f0);overflow:hidden}
+    .product-edition{position:absolute;left:20px;top:19px;z-index:2;font:9px var(--mono);letter-spacing:.12em;color:#50627d}
+    .product-aura{position:absolute;width:255px;height:255px;border-radius:50%;background:rgba(37,125,250,.16);filter:blur(34px);animation:product-aura 6s ease-in-out infinite}
+    .product-orbit{position:absolute;width:355px;height:355px;border:1px solid rgba(48,110,195,.19);border-radius:50%;animation:product-orbit 26s linear infinite}
+    .product-orbit:before,.product-orbit:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#3986f7;box-shadow:0 0 18px rgba(57,134,247,.65)}
+    .product-orbit:before{left:17%;top:21%}.product-orbit:after{right:12%;bottom:22%;width:5px;height:5px}
+    .product-render{position:relative;z-index:1;width:min(100%,560px);height:auto;overflow:visible;animation:product-float 6s ease-in-out infinite}
+    .product-earbud{transform-box:fill-box;transform-origin:center;animation:earbud-float 4.5s ease-in-out infinite}
+    .bud-right{animation-delay:-2.25s}
+    .product-stage-note{position:absolute;z-index:2;bottom:16px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:10px;color:#52647c}
+    .product-stage-note i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3986f7;box-shadow:0 0 10px rgba(57,134,247,.6)}
+    .product-info{max-width:460px;padding:8px 0}
+    .product-label{font:10px var(--mono);letter-spacing:.14em;color:#477ec0}
+    .product-info h3{font:600 clamp(38px,5vw,56px)/1 var(--display);letter-spacing:-.06em;margin:15px 0 12px;color:#131922}
+    .product-intro{color:#5d6775;font-size:14px;line-height:1.75;max-width:400px;margin:0 0 24px}
+    .product-price{display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 16px;padding:17px 0;border-top:1px solid rgba(35,49,66,.13);border-bottom:1px solid rgba(35,49,66,.13)}
+    .product-price span{font:10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:#748093}
+    .product-price strong{grid-column:2;grid-row:1/3;font:700 clamp(30px,4vw,42px)/1 var(--display);letter-spacing:-.055em;color:#111927}
+    .product-price small{font-size:11px;color:#7b8490}
+    .product-meta{display:grid;grid-template-columns:1fr 1fr;gap:15px 20px;padding:19px 0}
+    .product-meta span{display:grid;gap:5px;font-size:12px;color:#566170}
+    .product-meta b{font:9px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#8992a0}
+    .product-actions{display:flex;align-items:center;gap:19px;flex-wrap:wrap;margin-top:4px}
+    .product-actions .button{background:#1476f2;color:#fff;box-shadow:0 10px 25px rgba(20,118,242,.19)}
+    .product-actions .button:hover{box-shadow:0 12px 32px rgba(20,118,242,.3)}
+    .product-details-link{font-size:12px;font-weight:700;color:#315d91}
+    .product-order-note{font-size:10px;line-height:1.6;color:#788392;margin:14px 0 0}
+    .product-details{padding-top:48px}
+    .product-details-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:19px}
+    .product-details-head h3{font:600 clamp(22px,3vw,30px)/1.1 var(--display);letter-spacing:-.04em;margin:0}
+    .product-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+    .product-highlight{display:flex;align-items:flex-start;gap:13px;min-height:106px;padding:18px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.025)}
+    .product-symbol{flex:0 0 34px;width:34px;height:34px;display:grid;place-items:center;border:1px solid rgba(57,134,247,.25);border-radius:11px;background:rgba(57,134,247,.1);color:#6eafff;font-size:17px}
+    .product-highlight h4{font:600 14px var(--display);margin:1px 0 5px}
+    .product-highlight p{font-size:11px;line-height:1.6;color:var(--muted);margin:0}
+    @keyframes product-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes earbud-float{0%,100%{translate:0 0}50%{translate:0 -7px}}
+    @keyframes product-aura{50%{transform:scale(1.12);opacity:.72}}
+    @keyframes product-orbit{to{transform:rotate(360deg)}}
+    @media(max-width:900px){.product-feature{grid-template-columns:1fr;gap:27px}.product-stage{min-height:400px}.product-info{max-width:none}.product-intro{max-width:600px}.product-heading{align-items:start}}
+    @media(max-width:680px){.product-catalog{padding-top:62px;padding-bottom:76px}.product-heading{display:block}.product-heading>p{margin-top:13px}.product-feature{padding:12px;border-radius:23px;gap:20px}.product-stage{min-height:310px;border-radius:17px}.product-orbit{width:245px;height:245px}.product-aura{width:195px;height:195px}.product-edition{left:13px;top:13px;font-size:8px}.product-stage-note{font-size:9px;bottom:11px}.product-info{padding:7px 5px 12px}.product-info h3{font-size:39px}.product-intro{font-size:13px}.product-price{padding:14px 0}.product-price strong{font-size:30px}.product-meta{gap:13px;padding:16px 0}.product-actions{gap:14px}.product-actions .button{width:100%}.product-feature-grid{grid-template-columns:1fr 1fr;gap:8px}.product-highlight{min-height:120px;padding:13px 11px;gap:9px}.product-symbol{flex-basis:29px;width:29px;height:29px}.product-highlight h4{font-size:12px}.product-highlight p{font-size:10px}.product-details{padding-top:35px}.product-details-head{display:block}.product-details-head h3{margin-top:10px}}
+    @media(prefers-reduced-motion:reduce){.product-aura,.product-orbit,.product-render,.product-earbud{animation:none}}
 </style>
 </head>
 <body>
@@ -108,7 +157,7 @@
     <nav class="nav" aria-label="Main navigation">
       <a class="brand brand-logo" href="#top" aria-label="Digital Hub by Mahendra home"><img src="brand-logo-dark.svg" alt="Digital Hub by Mahendra"></a>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <div class="nav-links"><a href="#start">Work together</a><a href="#services">What I do</a><a href="#process">How it works</a><a href="#wins">What to expect</a><a class="nav-cta" href="#contact-form">Let’s talk <span class="arrow">↗</span></a></div>
+      <div class="nav-links"><a href="#start">Work together</a><a href="#services">What I do</a><a href="#process">How it works</a><a href="#wins">What to expect</a><a href="#products">Product</a><a class="nav-cta" href="#contact-form">Let’s talk <span class="arrow">↗</span></a></div>
     </nav>
   </div>
   <main id="top">
@@ -144,9 +193,68 @@
     <section class="section wrap" id="start"><div class="section-head engagement-head reveal"><span class="mono">A simple way to begin</span><h2>Start with clarity. <span class="gradient-text">Build from there.</span></h2><p>Choose the first step that fits where you are today. We can shape the rest around your goals.</p></div><div class="engagement-grid"><article class="engagement-card reveal"><span class="engagement-kicker">START A CONVERSATION</span><h3>Tell me what you’re building</h3><p>Share a little about your business and what you want to improve. I’ll reply to your email.</p><form class="engagement-form" id="contact-form" action="https://formsubmit.co/2bbe5ef6cb344997cee7f0e29f02fa99" method="POST"><input type="hidden" name="_subject" value="New website inquiry"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><label>Your name<input name="name" type="text" autocomplete="name" placeholder="Your name" required></label><label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Include your country code" required></label><label>Your email<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label><label>What can I help with?<textarea name="message" rows="4" placeholder="Tell me a little about your goals…" required></textarea></label><button class="button" type="submit">Send my message <span class="arrow">↗</span></button><p class="form-note">Your details will only be used to reply to your message.</p></form></article><article class="engagement-card featured reveal"><span class="engagement-kicker">Built around your goals</span><h3>Custom growth system</h3><div class="engagement-price"><strong>Custom</strong><span>shaped for your business</span></div><p>Connect the right marketing channels and AI tools to one focused revenue goal.</p><a class="button" href="#contact-form">Plan my next move <span class="arrow">→</span></a><ul class="engagement-list"><li>Channels, offers, and tools chosen for your niche</li><li>Campaigns, funnels, and automations</li><li>Clear reporting and ongoing optimization</li></ul></article></div></section>
     <section class="section wrap" id="faq"><div class="section-head engagement-head reveal"><span class="mono">Good questions</span><h2>Clear answers. <span class="gradient-text">No mystery.</span></h2><p>A few things people often want to know before we get started.</p></div><div class="faq-wrap reveal"><div class="faq-list"><details class="faq-item"><summary>What happens after I get in touch?</summary><div class="faq-answer"><div>I’ll review your goals and reply by email with a clear next step for your business.</div></div></details><details class="faq-item"><summary>Do I need to know which AI tools to use?</summary><div class="faq-answer"><div>No. Your growth map lays out the channels, offers, and AI tools that fit your business and niche.</div></div></details><details class="faq-item"><summary>Can you help with both the plan and implementation?</summary><div class="faq-answer"><div>Yes. The work can include strategy, campaigns, funnels, email, AI workflows, and analytics, depending on what your business needs.</div></div></details><details class="faq-item"><summary>How do we know what is working?</summary><div class="faq-answer"><div>Simple dashboards, weekly optimizations, and monthly reporting help show what is moving revenue and what to improve next.</div></div></details></div></div></section>
     <section class="section wrap" id="wins"><div class="section-head reveal"><div><span class="mono">What to expect</span><h2>A clearer way to <span class="gradient-text">move forward.</span></h2></div><p>Practical growth work starts with your goals, connects the right tools, and keeps learning from what the numbers show.</p></div><div class="wins"><article class="win reveal"><div class="win-head"><span class="avatar">01</span><div><b>Clear direction</b><small>Start with your goal</small></div></div><blockquote>Know what to focus on first, and why it matters to your business.</blockquote><span class="win-result">GROWTH STRATEGY</span></article><article class="win reveal"><div class="win-head"><span class="avatar">02</span><div><b>Connected execution</b><small>Bring the pieces together</small></div></div><blockquote>Connect campaigns, content, and useful AI tools to one focused plan.</blockquote><span class="win-result">PRACTICAL SYSTEMS</span></article><article class="win reveal"><div class="win-head"><span class="avatar">03</span><div><b>Steady improvement</b><small>Learn and adjust</small></div></div><blockquote>Use clear reporting to see what is working and decide what to improve next.</blockquote><span class="win-result">MEASURE & OPTIMIZE</span></article></div></section>
+    <section class="product-catalog section wrap" id="products">
+      <div class="product-heading reveal"><div><span class="mono">FEATURED PRODUCT · NEPAL</span><h2>Sound made <span class="gradient-text">personal.</span></h2></div><p>A clear look at the product, the price, and what’s included—before you decide.</p></div>
+      <article class="product-feature reveal">
+        <div class="product-stage">
+          <span class="product-edition">AIRPODS PRO 2 · WIRELESS AUDIO</span>
+          <div class="product-aura"></div><div class="product-orbit"></div>
+          <svg class="product-render" viewBox="0 0 620 470" role="img" aria-labelledby="buds-title buds-desc">
+            <title id="buds-title">White wireless earbuds with a charging case</title><desc id="buds-desc">Illustrated white earbuds floating above a compact charging case.</desc>
+            <defs>
+              <linearGradient id="bud-shell" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".55" stop-color="#f5f7fa"/><stop offset="1" stop-color="#cbd2db"/></linearGradient>
+              <linearGradient id="bud-side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d2d9e1"/><stop offset=".35" stop-color="#fff"/><stop offset="1" stop-color="#c1c9d3"/></linearGradient>
+              <linearGradient id="case-face" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".58" stop-color="#f2f5f8"/><stop offset="1" stop-color="#d5dce4"/></linearGradient>
+              <filter id="product-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#42536c" flood-opacity=".22"/></filter>
+            </defs>
+            <ellipse cx="309" cy="397" rx="188" ry="27" fill="#7d8ca1" opacity=".15"/>
+            <g class="product-case" filter="url(#product-shadow)">
+              <path d="M164 269c0-30 24-54 54-54h184c30 0 54 24 54 54v91c0 40-32 72-72 72H236c-40 0-72-32-72-72z" fill="url(#case-face)" stroke="#c8d0da" stroke-width="3"/>
+              <path d="M165 276h290" fill="none" stroke="#c5ced8" stroke-width="3"/>
+              <path d="M193 282c0-13 10-23 23-23h186c13 0 23 10 23 23v48c0 13-10 23-23 23H216c-13 0-23-10-23-23z" fill="#e8edf2" opacity=".9"/>
+              <rect x="292" y="378" width="42" height="6" rx="3" fill="#c2cad3"/>
+              <circle cx="313" cy="351" r="5" fill="#68b985"/>
+              <path d="M221 285c22-10 49-10 72 0M333 285c22-10 49-10 72 0" fill="none" stroke="#d3dae2" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <g class="product-earbud bud-left" filter="url(#product-shadow)">
+              <path d="M211 78c-29 0-52 23-52 52v24c0 22 18 40 40 40h20c24 0 43-19 43-43v-21c0-29-23-52-51-52z" fill="url(#bud-shell)" stroke="#c8d0da" stroke-width="3"/>
+              <path d="M193 173v93c0 17 14 31 31 31s31-14 31-31v-54" fill="url(#bud-side)" stroke="#c8d0da" stroke-width="3"/>
+              <ellipse cx="170" cy="139" rx="11" ry="16" fill="#dce2e9"/><ellipse cx="170" cy="139" rx="5" ry="9" fill="#778292"/>
+              <circle cx="228" cy="101" r="5" fill="#c1c9d4"/>
+            </g>
+            <g class="product-earbud bud-right" filter="url(#product-shadow)">
+              <path d="M405 92c-28 0-51 23-51 51v23c0 24 19 43 43 43h19c22 0 40-18 40-40v-25c0-29-23-52-51-52z" fill="url(#bud-shell)" stroke="#c8d0da" stroke-width="3"/>
+              <path d="M395 190v76c0 17 14 31 31 31s31-14 31-31v-49" fill="url(#bud-side)" stroke="#c8d0da" stroke-width="3"/>
+              <ellipse cx="448" cy="153" rx="11" ry="16" fill="#dce2e9"/><ellipse cx="448" cy="153" rx="5" ry="9" fill="#778292"/>
+              <circle cx="389" cy="113" r="5" fill="#c1c9d4"/>
+            </g>
+          </svg>
+          <span class="product-stage-note"><i></i> Wireless audio · everyday comfort</span>
+        </div>
+        <div class="product-info">
+          <span class="product-label">A FEATURED PICK</span>
+          <h3>AirPods Pro 2</h3>
+          <p class="product-intro">A compact wireless listening set for music, calls, and daily use. Take a closer look at the highlights below.</p>
+          <div class="product-price"><span>Nepal price</span><strong>NPR 1,999</strong><small>Listed in Nepali rupees</small></div>
+          <div class="product-meta"><span><b>Type</b>Wireless earbuds</span><span><b>In the box</b>Earbuds + charging case</span><span><b>Color</b>White</span></div>
+          <div class="product-actions"><a class="button primary" href="mailto:bista7023@gmail.com?subject=AirPods%20Pro%202%20order%20inquiry&body=Hi%20Mahendra%2C%0A%0AI%27m%20interested%20in%20the%20AirPods%20Pro%202%20listed%20at%20NPR%201%2C999.%20Please%20confirm%20availability%2C%20delivery%2C%20and%20product%20details.">Ask to order <span class="arrow">↗</span></a><a class="product-details-link" href="#product-details">Explore features ↓</a></div>
+          <p class="product-order-note">Email to check availability, delivery, and exact product details before ordering.</p>
+        </div>
+      </article>
+      <div class="product-details" id="product-details"><div class="product-details-head"><span class="mono">AT A GLANCE</span><h3>Everything you need to know.</h3></div>
+        <div class="product-feature-grid">
+          <article class="product-highlight"><span class="product-symbol">◉</span><div><h4>Noise control</h4><p>Listen with noise reduction, or let more of your surroundings in.</p></div></article>
+          <article class="product-highlight"><span class="product-symbol">♫</span><div><h4>Immersive audio</h4><p>Full, detailed sound for music, video, and everyday listening.</p></div></article>
+          <article class="product-highlight"><span class="product-symbol">⌁</span><div><h4>Easy connection</h4><p>Connect wirelessly to your compatible phone or device.</p></div></article>
+          <article class="product-highlight"><span class="product-symbol">⌖</span><div><h4>Touch controls</h4><p>Quick controls help manage playback and calls on the go.</p></div></article>
+          <article class="product-highlight"><span class="product-symbol">◌</span><div><h4>Call ready</h4><p>Built-in microphones keep hands-free conversations convenient.</p></div></article>
+          <article class="product-highlight"><span class="product-symbol">▱</span><div><h4>Charging case</h4><p>A compact case keeps the earbuds together between listens.</p></div></article>
+        </div>
+      </div>
+    </section>
     <section class="wrap final-cta" id="contact"><div class="cta-card reveal"><span class="mono"><span class="cta-spark">✳</span> &nbsp;YOUR NEXT CHAPTER STARTS HERE</span><h2>Let’s make your next move <span class="gradient-text">your best one.</span></h2><p>Book a free 30-minute call. I’ll spot your biggest opportunity and send you away with a plan you can actually use.</p><a class="button primary" href="#contact-form">Send me a message <span class="arrow">→</span></a></div></section>
   </main>
-  <footer><div class="wrap"><div class="footer-grid"><div class="footer-intro"><a class="brand brand-logo" href="#top" aria-label="Digital Hub by Mahendra home"><img src="brand-logo-dark.svg" alt="Digital Hub by Mahendra"></a><p>Clearer marketing systems for small businesses that want more customers, not more complexity.</p></div><div class="footer-col"><h4>EXPLORE</h4><a href="#why">The problem</a><a href="#start">Ways to work together</a><a href="#services">What I do</a><a href="#process">How it works</a><a href="#wins">What to expect</a></div><div class="footer-col"><h4>LET’S CONNECT</h4><a href="mailto:bista7023@gmail.com">Email Digital Hub ↗</a><a href="#contact-form">Send a project inquiry</a><a href="#guide">Free AI tools guide</a></div><div class="footer-col"><h4>ONE USEFUL EMAIL</h4><a href="#guide">Practical AI marketing ideas.<br>No noise. Unsubscribe anytime.</a></div></div><div class="copyright"><span>© 2026 Digital Hub by Mahendra. Made for momentum.</span><span class="socials"><a href="mailto:bista7023@gmail.com">Email ↗</a></span></div></div></footer>
+  <footer><div class="wrap"><div class="footer-grid"><div class="footer-intro"><a class="brand brand-logo" href="#top" aria-label="Digital Hub by Mahendra home"><img src="brand-logo-dark.svg" alt="Digital Hub by Mahendra"></a><p>Clearer marketing systems for small businesses that want more customers, not more complexity.</p></div><div class="footer-col"><h4>EXPLORE</h4><a href="#why">The problem</a><a href="#start">Ways to work together</a><a href="#services">What I do</a><a href="#process">How it works</a><a href="#wins">What to expect</a><a href="#products">Featured product</a></div><div class="footer-col"><h4>LET’S CONNECT</h4><a href="mailto:bista7023@gmail.com">Email Digital Hub ↗</a><a href="#contact-form">Send a project inquiry</a><a href="#guide">Free AI tools guide</a></div><div class="footer-col"><h4>ONE USEFUL EMAIL</h4><a href="#guide">Practical AI marketing ideas.<br>No noise. Unsubscribe anytime.</a></div></div><div class="copyright"><span>© 2026 Digital Hub by Mahendra. Made for momentum.</span><span class="socials"><a href="mailto:bista7023@gmail.com">Email ↗</a></span></div></div></footer>
   <script>
     // Local-file FormSubmit fallback: FormSubmit requires HTTP(S), so open a prefilled email when this page is opened directly from disk.
     document.querySelectorAll('form[action^="https://formsubmit.co/"]').forEach(form=>form.addEventListener('submit',event=>{
