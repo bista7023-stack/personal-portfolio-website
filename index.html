@@ -83,6 +83,24 @@
     .engagement-form .button{margin:2px 0 0}
     .engagement-form .form-note{min-height:0;margin:0;color:#85867f}
     @media(max-width:680px){.engagement-grid{grid-template-columns:1fr}}
+
+    /* Lottie-inspired, lightweight SVG motion */
+    .motion-float{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;max-width:190px;padding:11px 13px;border:1px solid rgba(105,166,255,.24);border-radius:15px;background:rgba(14,24,42,.9);backdrop-filter:blur(14px);box-shadow:0 15px 40px rgba(0,0,0,.25);font-size:10px;line-height:1.4;color:#d7e2f5;animation:motion-drift 5.8s ease-in-out infinite}
+    .motion-float b{display:block;color:#fff;font-size:11px}
+    .motion-float-one{left:-2%;top:12%}
+    .motion-float-two{right:-2%;top:10%;animation-delay:-2s}
+    .motion-float-three{right:-3%;bottom:12%;animation-delay:-3.8s}
+    .motion-icon{flex:0 0 38px;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:rgba(20,118,242,.13);color:#6eafff}
+    .motion-icon svg{width:27px;height:27px;overflow:visible}
+    .motion-icon path{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:110;stroke-dashoffset:110;animation:motion-draw 2.2s .25s ease forwards}
+    .motion-float-two .motion-icon path:last-child{animation-delay:.7s}
+    @keyframes motion-drift{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+    @keyframes motion-draw{to{stroke-dashoffset:0}}
+    .service-icon{transition:transform .42s cubic-bezier(.2,.8,.2,1),box-shadow .42s}
+    .service:hover .service-icon{transform:translateY(-5px) rotate(-8deg) scale(1.06);box-shadow:0 10px 25px rgba(20,118,242,.16)}
+    @media(max-width:900px){.motion-float-one{left:-1%}.motion-float-two{right:-1%}.motion-float-three{right:0}}
+    @media(max-width:680px){.motion-float{max-width:150px;padding:8px 9px;gap:7px;font-size:9px}.motion-float b{font-size:10px}.motion-icon{flex-basis:31px;width:31px;height:31px;border-radius:10px}.motion-icon svg{width:22px;height:22px}.motion-float-one{left:0;top:0}.motion-float-two{right:0;top:0}.motion-float-three{display:none}}
+    @media(prefers-reduced-motion:reduce){.motion-float{animation:none}.motion-icon path{stroke-dashoffset:0;animation:none}}
 </style>
 </head>
 <body>
@@ -110,7 +128,7 @@
           <div class="chart"><svg viewBox="0 0 400 135" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1476f2" stop-opacity=".27"/><stop offset="1" stop-color="#1476f2" stop-opacity="0"/></linearGradient></defs><path d="M0 110 C22 99 30 107 48 88 S80 94 98 78 S125 84 145 67 S172 80 190 54 S218 70 237 52 S261 61 279 37 S304 48 323 28 S348 42 365 18 S385 25 400 6 V135 H0Z" fill="url(#fill)"/><path class="chart-path" d="M0 110 C22 99 30 107 48 88 S80 94 98 78 S125 84 145 67 S172 80 190 54 S218 70 237 52 S261 61 279 37 S304 48 323 28 S348 42 365 18 S385 25 400 6" fill="none" stroke="#1476f2" stroke-width="3" stroke-linecap="round"/><circle class="chart-dot" cx="400" cy="6" r="5" fill="#9ac9ff"/></svg></div>
           <div class="dash-bottom"><div class="dash-stat"><b>ROAS</b><span>TRACKED</span></div><div class="dash-stat"><b>Leads</b><span>MEASURED</span></div><div class="dash-stat"><b>Costs</b><span>OPTIMIZED</span></div></div>
         </div>
-        <div class="float-chip chip-one"><span class="chip-icon">✦</span>More of what works <b>with a plan</b></div><div class="float-chip chip-two"><span class="chip-icon">⚡</span>AI assisted <b>human led</b></div>
+        <div class="motion-float motion-float-one" aria-hidden="true"><span class="motion-icon"><svg viewBox="0 0 40 40"><path d="M7 31V9M7 31h27M11 26l7-8 6 5 10-12M28 11h6v6"/></svg></span><span>More of what works <b>with a plan</b></span></div><div class="motion-float motion-float-two" aria-hidden="true"><span class="motion-icon"><svg viewBox="0 0 40 40"><path d="M20 5l3.2 9.7L33 18l-9.8 3.2L20 31l-3.2-9.8L7 18l9.8-3.3L20 5z"/><path d="M31 27l1.5 4.5L37 33l-4.5 1.5L31 39l-1.5-4.5L25 33l4.5-1.5L31 27z"/></svg></span><span>AI assisted <b>human led</b></span></div><div class="motion-float motion-float-three" aria-hidden="true"><span class="motion-icon"><svg viewBox="0 0 40 40"><path d="M6 9h28l-11 13v9l-10 4V22L6 9z"/><path d="M13 15h14"/></svg></span><span>One clear <b>growth goal</b></span></div>
       </div><div class="scroll-note">SCROLL TO GROW ↓</div>
     </section>
     <section class="trust"><div class="wrap trust-inner"><span class="mono">Connected growth essentials</span><div class="logos"><span>Strategy</span><span>Paid media</span><span>Email</span><span>Automation</span><span>Analytics</span><span>Reporting</span></div></div></section>
